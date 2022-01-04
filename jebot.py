@@ -1,4 +1,4 @@
-#    Copyright (c) 2021 Infinity BOTs <https://t.me/Infinity_BOTs>
+#    Copyright (c) 2021 Infinity BOTs <https://t.me/drkhumanmusic>
  
 #    This program is free software: you can redistribute it and/or modify  
 #    it under the terms of the GNU General Public License as published by  
@@ -45,7 +45,7 @@ Jebot = Client(
  #No bots also allowed
 @Jebot.on_message(filters.private & ~filters.bot & ~filters.command("help") & ~filters.command("start") & ~filters.command("s"))
 async def song(client, message):
- #ImJanindu #JEBotZ
+ #ImVidun #JEBotZ
     cap = "@JEBotZ"
     url = message.text
     rkp = await message.reply("Processing...")
@@ -198,7 +198,7 @@ async def song(client, message):
         return
     time.time()
     if song:
-        await rkp.edit("Uploading...") #ImJanindu
+        await rkp.edit("Uploading...") #ImVidun
         lol = "./thumb.jpg"
         lel = await message.reply_audio(
                  f"{rip_data['id']}.mp3",
@@ -223,7 +223,7 @@ Hit help button to find out more about how to use me</b>""",
                                         InlineKeyboardButton(
                                             "Help", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Channel", url="https://t.me/Infinity_BOTs")
+                                            "Channel", url="https://t.me/drkhumanmusic")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
