@@ -46,7 +46,7 @@ Jebot = Client(
 @Jebot.on_message(filters.private & ~filters.bot & ~filters.command("help") & ~filters.command("start") & ~filters.command("s"))
 async def song(client, message):
  #ImVidun #JEBotZ
-    cap = "@JEBotZ"
+    cap = "@DrkHuman"
     url = message.text
     rkp = await message.reply("Processing...")
     search = SearchVideos(url, offset=1, mode="json", max_results=1)
