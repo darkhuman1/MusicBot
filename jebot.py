@@ -45,7 +45,7 @@ Jebot = Client(
  #No bots also allowed
 @Jebot.on_message(filters.private & ~filters.bot & ~filters.command("help") & ~filters.command("start") & ~filters.command("s"))
 async def song(client, message):
- #ImVidun #JEBotZ
+ #ImVidun 
     cap = "@DrkHuman"
     url = message.text
     rkp = await message.reply("Processing...")
@@ -122,13 +122,13 @@ async def song(client, message):
                  title=str(rip_data["title"]),
                  performer=str(rip_data["uploader"]),
                  thumb=lol,
-                 caption=cap)  #JEBotZ
+                 caption=cap)  #ImVidun
         await rkp.delete()
   
     
 @Jebot.on_message(filters.command("song") & ~filters.edited & filters.group)
 async def song(client, message):
-    cap = "@JEBotZ"
+    cap = "@DrkHuman"
     url = message.text.split(None, 1)[1]
     rkp = await message.reply("Processing...")
     if not url:
@@ -206,7 +206,7 @@ async def song(client, message):
                  title=str(rip_data["title"]),
                  performer=str(rip_data["uploader"]),
                  thumb=lol,
-                 caption=cap)  #JEBotZ
+                 caption=cap)  #ImVidun
         await rkp.delete()
  
     
@@ -215,7 +215,7 @@ async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hey There, I'm a Song Downloader Bot. A bot by @JEBotZ.
+               text="""<b>Hey There, I'm a Song Downloader Bot. A bot by @DrkHuman.
 
 Hit help button to find out more about how to use me</b>""",   
                             reply_markup=InlineKeyboardMarkup(
@@ -276,7 +276,7 @@ print(
     """
 Bot Started!
 
-Join @Infinity_BOTs
+Join @drkhumanmusic
 """
 )
 
